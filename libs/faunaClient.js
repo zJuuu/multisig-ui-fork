@@ -8,7 +8,7 @@ const client = new faunadb.Client({
 const q = faunadb.query
 
 const graphqlReq = axios.create({
-  baseURL: "https://graphql.fauna.com/graphql",
+  baseURL: "https://graphql.eu.fauna.com/graphql",
   headers: {
     Authorization: `Bearer ${process.env.NEXT_PUBLIC_FAUNADB_SECRET}`,
   },
