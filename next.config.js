@@ -2,6 +2,7 @@
 
 module.exports = {
   reactStrictMode: true,
+  output: 'standalone',
   env: {
     HOST: process.env.HOST,
     FAUNADB_SECRET: process.env.FAUNADB_SECRET
