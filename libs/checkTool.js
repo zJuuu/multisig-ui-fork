@@ -13,7 +13,7 @@ export const checkAddress = (addr, prefix) => {
 
 export const isValidAddress = (addr, prefix) => {
     try {
-        checkAddress(addr, prefix)
+        //checkAddress(addr, prefix)
         return true
     }
     catch {

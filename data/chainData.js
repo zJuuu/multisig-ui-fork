@@ -10,7 +10,7 @@ export const chainData = [
         name: "osmosis",
         prefix: "osmo",
         color: "linear-gradient(270.1deg, #5E12A0 0%, #390368 100%)",
-        rpc: "https://rpc-osmosis-ia.cosmosia.notional.ventures/",
+        rpc: "https://rpc.osmosis.zone/",
         api: "https://osmosis-api.polkachu.com/",
         explorer: "https://www.mintscan.io/osmosis/",
         txExplorer: "https://www.mintscan.io/osmosis/txs/",
@@ -458,7 +458,27 @@ export const chainData = [
         govExplorer: "https://explorer.theamsolutions.info/qwoyn-main/gov/",
         logo: "/images/logo/qwoyn.png",
         hyperLink: "https://qwoyn.studio/"
-    }
+    },
+    {
+        chain_id: "phoenix-1",
+        denom: "uluna",
+        displayDenom: "luna",
+        base_denom: {
+            "denom": "uluna",
+            "exponent": 6
+        },
+        name: "terra2",
+        prefix: "terra",
+        color: "linear-gradient(270.1deg, #F0827D 0%, #C5585A 100%)",
+        rpc: "https://terra-rpc.polkachu.com/",
+        api: "https://terra-api.polkachu.com/",
+        explorer: "https://finder.terra.money/",
+        txExplorer: "https://finder.terra.money/txs/",
+        valExplorer: "",
+        govExplorer: "",
+        logo: "/images/logo/juno.png",
+        hyperLink: ""
+    },
 ]
 
 export const prefixToId = {
@@ -484,7 +504,8 @@ export const prefixToId = {
     "sge": 19,
     "centauri": 20,
     "neutron": 21,
-    "qwoyn": 22
+    "qwoyn": 22,
+    "terra": 23
 }
 
 
@@ -511,7 +532,8 @@ export const idToChainId = {
     19: "sge-network-3",
     20: "centuri-1",
     21: "neutron-1",
-    22: "qwoyn-1"
+    22: "qwoyn-1",
+    23: "phoenix-1"
 }
 
 
