@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../../input/Input"
+import { isValidAddress } from "../../../libs/checkTool";
 import { openNotification } from "../../ulti/Notification";
 import { createSendMsg, } from "../../../libs/transaction";
 import { denomShortender, 
@@ -75,7 +76,7 @@ const SendMsgForm = ({ address, chain, style, msgs, setMsgs, balances }) => {
     }
 
     const handleKeyBlur = (e) => {
-        if (e.target.name === "toAddress") {
+        if (e.target.name === "toAddress" && !isValidAddress(e.target.value, chain.prefix)) {
             setAddrError("Invalid Address")
         }
         else {

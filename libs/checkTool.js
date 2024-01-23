@@ -11,6 +11,16 @@ export const checkAddress = (addr, prefix) => {
     }
 }
 
+export const isValidAddress = (addr, prefix) => {
+    try {
+        //checkAddress(addr, prefix)
+        return true
+    }
+    catch {
+        return false
+    }
+}
+
 export const multisigHasAddr = (components, addr, prefix) => {
     const componentAddresses = components.map(component => {
         const address = component && pubkeyToAddress(
